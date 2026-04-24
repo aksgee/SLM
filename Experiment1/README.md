@@ -20,6 +20,8 @@ All agents use the same 0.6B Qwen3 model. The MAS is compared against single‑m
 Most evaluations use large models (7B+) for this kind of study. The work presented here systematically compares a multi‑agent architecture against single‑model baselines for tool calling using a **0.6B parameter model**, showing that decomposition can bridge the accuracy gap with much larger models.
 
 ## 3. Methodology
+<img width="1294" height="1020" alt="image" src="https://github.com/user-attachments/assets/119733aa-4312-456a-9451-4ad7fdca37b2" />
+
 
 ### 3.1 Multi‑Agent Architecture
 The system consists of five agents (all using `qwen3:0.6b` with temperature 0.1):
@@ -31,6 +33,9 @@ The system consists of five agents (all using `qwen3:0.6b` with temperature 0.1)
   - **Knowledge Agent** – Output: `{"name": "get_internal_knowledge", "parameters": {"topic": "...", "department": "..."}}`.
 
 Each specialized agent’s prompt contains only its own tool schema and a few examples. The orchestrator calls the router first, then passes the original query to the appropriate specialist. No iterative refinement is used; one‑pass accuracy is measured.
+
+<img width="1294" height="1020" alt="image" src="https://github.com/user-attachments/assets/ce93ce5e-3cf1-4938-9bea-aafb03392d68" />
+
 
 ### 3.2 Baseline Models
 Three single‑model configurations are used for comparison:
