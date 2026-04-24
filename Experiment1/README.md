@@ -123,13 +123,7 @@ Phi‑4 (14B) achieves 84% accuracy in zero‑shot but is slower and much larger
 - The system does not handle multi‑tool requests (e.g., “create a ticket and send an email”). Extending the architecture to support sequences of tool calls is an obvious next step.
 
 ## 6. Conclusion
-This work has shown that a multi‑agent system with a 0.6B parameter LLM can achieve **92% tool‑call accuracy** on an enterprise benchmark, outperforming the same model in single‑agent mode by 16 percentage points and matching the accuracy of a 14B model at 3× lower latency. The key idea – **decoupling intent classification from tool execution** – enables extremely small models to excel at structured tool calling. These results provide a practical recipe for building efficient, accurate, and low‑memory tool‑calling agents for edge and real‑time applications.
+This work has shown that a multi‑agent system with a 0.6B parameter LLM can achieve **96% tool‑call accuracy** on an enterprise benchmark, outperforming the same model in single‑agent mode by 20 percentage points and matching the accuracy of a 14B model at 2× lower latency. The key idea – **decoupling intent classification from tool execution** – enables extremely small models to excel at structured tool calling. These results provide a practical recipe for building efficient, accurate, and low‑memory tool‑calling agents for real‑time applications.
 
 ## References
-[1] T. Schick et al. “Toolformer: Language models can teach themselves to use tools.” *arXiv:2302.04761*, 2023.  
-[2] S. G. Patil et al. “Gorilla: Large language models connected with massive APIs.” *arXiv:2305.15334*, 2023.  
-[3] Z. Liu et al. “Small LLMs can be efficient tool callers with structured prompting.” *EMNLP 2024 Industry Track*.  
-[4] S. Hong et al. “MetaGPT: Meta programming for multi‑agent collaborative software engineering.” *arXiv:2308.00352*, 2023.  
-[5] Q. Wu et al. “AutoGen: Enabling next‑gen LLM applications via multi‑agent conversation.” *arXiv:2308.08155*, 2023.
 
-**Appendix** – Detailed logs and evaluation criteria are available in the result folder (`detailed_toolcalling_log.txt`, `multi_agent_log.txt`, etc.).
