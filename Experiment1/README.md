@@ -88,7 +88,7 @@ Key observations:
 
 
 The one error occurred in:
-- **Customer Query** – a query about bulk pricing discounts was routed to `KNOWLEDGE_QUERY` instead of `CUSTOMER_QUERY`, leading to a `wrong_tool` error.
+- **Customer Query** – a query about "Projector in boardroom is not working for today's client presentation" was routed to `CUSTOMER_QUERY` instead of `CREATE_IT_TICKET`, leading to a `wrong_tool` error.
 
 
 All errors are **router errors**; once the correct category is chosen, the specialized agent never fails. This highlights that the bottleneck is intent classification, not parameter extraction.
