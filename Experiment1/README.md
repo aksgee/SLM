@@ -12,9 +12,6 @@ Language models (LMs) are increasingly used as autonomous agents that invoke ext
 **Multi‑agent systems (MAS)** offer a solution: Instead of a single model that handles all tools, a team of specialized agents divides the work. In this paper, a two‑stage MAS for enterprise tool calling is designed and evaluated:
 - A **Router Agent** that classifies the query into categories.
 - **Specialized Agents**, each trained (via prompting) to generate a single tool call.
-![Uploading image.png…]()
-
-
 
 All agents use the same 0.6B Qwen3 model. The MAS is compared against single‑model baselines (Qwen3‑0.6B, DeepSeek‑R1‑7B, Phi‑4) in zero‑shot and few‑shot settings. The main contributions are:
 1. A concrete multi‑agent architecture that reduces cognitive load by separating routing from tool execution.
@@ -24,6 +21,29 @@ Most evaluations use large models (7B+) for this kind of study. The work present
 
 
 ## 3. Methodology
+## Architecture Principle
+
+The fundamental principle of this architecture is the separation of **Intent Classification** from **Task Execution**. By isolating these responsibilities, the system eliminates the need for a single model to simultaneously understand ambiguous user requests, select from a massive toolset, and format complex outputs. This reduces hallucinations, improves accuracy, and allows small, highly efficient models to perform at an enterprise level.
+
+---
+
+## Step-by-Step Operational Workflow
+
+### Step 1: Ingestion (The User Prompt)
+
+- **Action:** The user submits an unstructured, natural language query (e.g., *"My laptop screen is flickering, I need help ASAP"*).
+- **Data Flow:** The central **Orchestrator** receives this raw text string.
+
+### Step 2: Intent Classification (Stage 1 – Router Agent)
+
+- **Action:** The Orchestrator forwards the raw user query exclusively to the **Router Agent**.
+- **Context/Prompting:** The Router Agent is equipped with a highly specific prompt containing approximately 10 few-shot examples mapping various user requests to predefined categories. It is completely isolated from downstream tools or execution logic.
+- **Processing:** The Router evaluates the text to determine **what** the user wants, not how to solve it.
+- **Output Payload:** The Router generates a lightweight, standardized JSON response containing the routing parameters.
+
+**Step 3: The Handoff (The Orchestrator)** – The Orchestrator parses the Router Agent's JSON output. Based on the identified `category`, the Orchestrator opens a direct channel to the corresponding **Specialized Agent**. The Orchestrator takes the original, raw user query (and optionally the priority/reasoning from the Router) and passes it to the selected Specialized Agent.
+
+**Step 4: Task Execution (Stage 2 – Specialized Agents)** – The activated Specialized Agent takes over the request. Because the agent has only one job, its system prompt is hyper‑focused. It contains only the instructions, formatting rules, and tool access necessary for its specific domain, filtering out all unrelated corporate knowledge. The agent executes the necessary logic (e.g., extracting dates for leave, formatting IT descriptions, querying a vector database). The Specialized Agent generates the final, formatted response or triggers the final action, which is then delivered back to the user via the Orchestrator.
 
 ### 3.1 Multi‑Agent Architecture
 The system consists of five agents (all using `qwen3:0.6b` with temperature 0.1):
