@@ -100,8 +100,8 @@ Across all models, the most common error is `wrong_tool` (misclassification) fol
 ### 4.4 Latency Comparison
 
 - **Multi‑agent**: 4253 ms (router ~1000 ms, specialist ~3200 ms).
-- **phi4 (zero‑shot)**: 8171 ms – ~2× slower.
-- **deepseek (zero‑shot)**: 18160 ms – ~4× slower.
+- **phi4 (few‑shot)**: 8171 ms – ~2× slower.
+- **deepseek (few‑shot)**: 17559 ms – ~4× slower.
 
 The multi‑agent system’s low latency makes it suitable for real‑time applications, whereas the 7B and 14B models introduce noticeable delays.
 
