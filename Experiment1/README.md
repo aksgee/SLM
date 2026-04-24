@@ -12,6 +12,8 @@ Language models (LMs) are increasingly used as autonomous agents that invoke ext
 **Multi‑agent systems (MAS)** offer a solution: Instead of a single model that handles all tools, a team of specialized agents divides the work. In this paper, a two‑stage MAS for enterprise tool calling is designed and evaluated:
 - A **Router Agent** that classifies the query into categories.
 - **Specialized Agents**, each trained (via prompting) to generate a single tool call.
+![Uploading image.png…]()
+
 
 All agents use the same 0.6B Qwen3 model. The MAS is compared against single‑model baselines (Qwen3‑0.6B, DeepSeek‑R1‑7B, Phi‑4) in zero‑shot and few‑shot settings. The main contributions are:
 1. A concrete multi‑agent architecture that reduces cognitive load by separating routing from tool execution.
@@ -20,8 +22,6 @@ All agents use the same 0.6B Qwen3 model. The MAS is compared against single‑m
 Most evaluations use large models (7B+) for this kind of study. The work presented here systematically compares a multi‑agent architecture against single‑model baselines for tool calling using a **0.6B parameter model**, showing that decomposition can bridge the accuracy gap with much larger models.
 
 ## 3. Methodology
-<img width="1294" height="1020" alt="image" src="https://github.com/user-attachments/assets/119733aa-4312-456a-9451-4ad7fdca37b2" />
-
 
 ### 3.1 Multi‑Agent Architecture
 The system consists of five agents (all using `qwen3:0.6b` with temperature 0.1):
