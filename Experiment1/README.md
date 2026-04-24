@@ -1,4 +1,4 @@
-# Reducing Cognitive Load via Specialized Routing: A Multi‑Agent Tool Calling System with a sub-1B parameter language model
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/6961efb4-d929-4f82-b822-26f811e5be6c" /># Reducing Cognitive Load via Specialized Routing: A Multi‑Agent Tool Calling System with a sub-1B parameter language model
 
 ## Abstract
 Tool calling is a core capability for enterprise LM agents, but small models (≤1B parameters) struggle with multi‑tool selection and structured output generation. A multi‑agent architecture is proposed that decomposes the task into a lightweight **Router Agent** (classifies the query into specific domains) and **Specialized Agents** (each handling exactly one tool type). Using a 0.6B Qwen3 model, this system achieves **96.0% accuracy** on a 25‑query benchmark, outperforming the same model in zero‑shot (64%) and few‑shot (76%) configurations. Compared to much larger models - 7B DeepSeek model (72% accuracy, 22s latency) and a 14B Phi‑4 model (96% accuracy, 8s latency), the multi‑agent system offers a compelling trade‑off: near‑state‑of‑the‑art accuracy at **4s average latency** and minimal memory footprint. The results demonstrate that **task decomposition and role specialization** can compensate for model size, enabling efficient and accurate tool calling on sub‑billion parameter models if given an efficient prompt template.
@@ -15,11 +15,13 @@ Language models (LMs) are increasingly used as autonomous agents that invoke ext
 ![Uploading image.png…]()
 
 
+
 All agents use the same 0.6B Qwen3 model. The MAS is compared against single‑model baselines (Qwen3‑0.6B, DeepSeek‑R1‑7B, Phi‑4) in zero‑shot and few‑shot settings. The main contributions are:
 1. A concrete multi‑agent architecture that reduces cognitive load by separating routing from tool execution.
 2. Empirical evidence that a 0.6B MAS achieves 96% accuracy – competitive with a 14B model (96%) but at 3× lower latency and much smaller memory.
 
 Most evaluations use large models (7B+) for this kind of study. The work presented here systematically compares a multi‑agent architecture against single‑model baselines for tool calling using a **0.6B parameter model**, showing that decomposition can bridge the accuracy gap with much larger models.
+
 
 ## 3. Methodology
 
