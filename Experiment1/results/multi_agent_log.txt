@@ -1,0 +1,202 @@
+Multi-Agent System Log
+============================================================
+
+==================================================
+Query: The payment gateway is failing for all users in production. Please create a critical ticket.
+Router Category: IT_TICKET
+Response: {"name": "create_it_ticket", "parameters": {"title": "Payment Gateway Failure in Production", "description": "Payment gateway failing for all users in production", "priority": "Critical", "department": "Engineering"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 3348ms
+Routing Correct: True
+
+==================================================
+Query: I need to apply for sick leave tomorrow because of fever.
+Router Category: LEAVE_REQUEST
+Response: {"name": "process_leave_request", "parameters": {"leave_type": "Sick", "start_date": "2026-04-14", "end_date": "2026-04-14", "reason": "Fever"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 5540ms
+Routing Correct: True
+
+==================================================
+Query: Customer with ID CUST7845 is enquiring about his TKT123 that has been created for late delivery of order ORD12345. Route query to appropriate team for enquiry response
+Router Category: CUSTOMER_QUERY
+Response: {"name": "route_customer_query", "parameters": {"query_type": "Late Delivery", "customer_id": "CUST7845", "priority": "High", "department": "Logistics"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 4525ms
+Routing Correct: True
+
+==================================================
+Query: What is the current policy for reimbursing project expenses above 50,000 rupees?
+Router Category: KNOWLEDGE_QUERY
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "Reimbursement Policy", "department": "Finance"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 2990ms
+Routing Correct: True
+
+==================================================
+Query: Create separate tickets for both the SAP CRM server issue and AC breakdown in Hyderabad office.
+Router Category: IT_TICKET
+Response: {"name": "create_it_ticket", "parameters": {"title": "SAP CRM Server Failure", "description": "SAP CRM server is experiencing issues with data synchronization and connectivity. It is affecting production systems and critical business processes.", "priority": "High", "department": "IT Infrastructure"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 5070ms
+Routing Correct: True
+
+==================================================
+Query: The main file server is inaccessible for the finance team since morning.
+Router Category: IT_TICKET
+Response: {"name": "create_it_ticket", "parameters": {"title": "Main File Server Inaccessible for Finance Team", "description": "Main file server is inaccessible for the finance team since morning", "priority": "Critical", "department": "Finance"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 4227ms
+Routing Correct: True
+
+==================================================
+Query: VPN is disconnecting every few minutes for remote employees.
+Router Category: IT_TICKET
+Response: {"name": "create_it_ticket", "parameters": {"title": "VPN Disconnection Frequency Issue", "description": "VPN disconnects every few minutes for remote employees", "priority": "High", "department": "IT Support"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 3097ms
+Routing Correct: True
+
+==================================================
+Query: The attendance system is not marking entries for the operations team.
+Router Category: IT_TICKET
+Response: {"name": "create_it_ticket", "parameters": {"title": "Attendance System Not Marking Entries for Operations Team", "description": "Attendance system fails to mark entries for the operations team", "priority": "Medium", "department": "Operations"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 3530ms
+Routing Correct: True
+
+==================================================
+Query: Projector in boardroom is not working for today's client presentation.
+Router Category: CUSTOMER_QUERY
+Response: {"name": "route_customer_query", "parameters": {"query_type": "Projector Not Working", "customer_id": null, "priority": "High", "department": "Sales"}}
+Expected: null
+Success: 0 | Reason: wrong_tool | Time: 3967ms
+Routing Correct: False
+
+==================================================
+Query: Outlook emails are not syncing for the sales team.
+Router Category: IT_TICKET
+Response: {"name": "create_it_ticket", "parameters": {"title": "Outlook Sync Issues for Sales Team", "description": "Outlook emails are not syncing for the sales team.", "priority": "Medium", "department": "Sales"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 3972ms
+Routing Correct: True
+
+==================================================
+Query: I want to take earned leave from 8th May to 15th May for annual family trip.
+Router Category: LEAVE_REQUEST
+Response: {"name": "process_leave_request", "parameters": {"leave_type": "Earned", "start_date": "2026-05-08", "end_date": "2026-05-15", "reason": "Family trip"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 5492ms
+Routing Correct: True
+
+==================================================
+Query: Requesting 2 days casual leave next week for personal reasons.
+Router Category: LEAVE_REQUEST
+Response: {"name": "process_leave_request", "parameters": {"leave_type": "Casual", "start_date": "2026-04-21", "end_date": "2026-04-22", "reason": "Personal reasons"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 3702ms
+Routing Correct: True
+
+==================================================
+Query: I need medical leave for 4 days starting tomorrow due to surgery follow-up.
+Router Category: LEAVE_REQUEST
+Response: {"name": "process_leave_request", "parameters": {"leave_type": "Sick", "start_date": "2026-04-13", "end_date": "2026-04-17", "reason": "surgery follow-up"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 4990ms
+Routing Correct: True
+
+==================================================
+Query: Applying for paternity leave starting 1st June for 3 weeks.
+Router Category: LEAVE_REQUEST
+Response: {"name": "process_leave_request", "parameters": {"leave_type": "Earned", "start_date": "2026-06-01", "end_date": "2026-06-08", "reason": "paternity leave"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 4889ms
+Routing Correct: True
+
+==================================================
+Query: Requesting half day leave on 18th April for bank visit.
+Router Category: LEAVE_REQUEST
+Response: {"name": "process_leave_request", "parameters": {"leave_type": "Casual", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "Bank visit"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 6196ms
+Routing Correct: True
+
+==================================================
+Query: Customer CUST9921 has not received his order ORD7789 even after 12 days. Route this to logistics team.
+Router Category: CUSTOMER_QUERY
+Response: {"name": "route_customer_query", "parameters": {"query_type": "Delivery Delay", "customer_id": "CUST9921", "priority": "High", "department": "Logistics"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 4954ms
+Routing Correct: True
+
+==================================================
+Query: Client CUST3344 is asking for immediate callback regarding pending payment invoice.
+Router Category: CUSTOMER_QUERY
+Response: {"name": "route_customer_query", "parameters": {"query_type": "Payment Follow-up", "customer_id": "CUST3344", "priority": "High", "department": "Finance"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 3461ms
+Routing Correct: True
+
+==================================================
+Query: Customer CUST8604 received wrong item in order ORD5566 and is very upset. Route to support.
+Router Category: CUSTOMER_QUERY
+Response: {"name": "route_customer_query", "parameters": {"query_type": "Wrong Item Delivered", "customer_id": "CUST8604", "priority": "High", "department": "Customer Support"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 3806ms
+Routing Correct: True
+
+==================================================
+Query: Customer CUST1122 wants status of his refund request for order ORD3344.
+Router Category: CUSTOMER_QUERY
+Response: {"name": "route_customer_query", "parameters": {"query_type": "Refund Status", "customer_id": "CUST1122", "priority": "High", "department": "Customer Support"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 4608ms
+Routing Correct: True
+
+==================================================
+Query: Client is asking about bulk pricing discount for next quarter order. Route to sales.
+Router Category: CUSTOMER_QUERY
+Response: {"name": "route_customer_query", "parameters": {"query_type": "Pricing Inquiry", "customer_id": null, "priority": "Medium", "department": "Sales"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 4955ms
+Routing Correct: True
+
+==================================================
+Query: What is the company policy on work from home for parents with young children?
+Router Category: KNOWLEDGE_QUERY
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "Work from Home for Parents with Young Children", "department": "HR"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 4078ms
+Routing Correct: True
+
+==================================================
+Query: What are the rules for claiming cab reimbursement for site visits?
+Router Category: KNOWLEDGE_QUERY
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "cab reimbursement for site visits", "department": "HR"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 3640ms
+Routing Correct: True
+
+==================================================
+Query: What is the approval limit for purchase requests above 1 lakh rupees?
+Router Category: KNOWLEDGE_QUERY
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "Purchase Request Approval Limit", "department": "Finance"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 4809ms
+Routing Correct: True
+
+==================================================
+Query: How many sick leaves are allowed per year for employees?
+Router Category: KNOWLEDGE_QUERY
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "Sick Leave Entitlement", "department": "HR"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 2815ms
+Routing Correct: True
+
+==================================================
+Query: What is the dress code policy for client meetings and office visits?
+Router Category: KNOWLEDGE_QUERY
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "Dress Code Policy", "department": "HR"}}
+Expected: null
+Success: 1 | Reason: ok | Time: 3656ms
+Routing Correct: True

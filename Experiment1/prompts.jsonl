@@ -1,0 +1,25 @@
+{"id": 1, "query": "The payment gateway is failing for all users in production. Please create a critical ticket."}
+{"id": 2, "query": "I need to apply for sick leave tomorrow because of fever."}
+{"id": 3, "query": "Customer with ID CUST7845 is enquiring about his TKT123 that has been created for late delivery of order ORD12345. Route query to appropriate team for enquiry response"}
+{"id": 4, "query": "What is the current policy for reimbursing project expenses above 50,000 rupees?"}
+{"id": 5, "query": "Create separate tickets for both the SAP CRM server issue and AC breakdown in Hyderabad office."}
+{"id": 6, "query": "The main file server is inaccessible for the finance team since morning."}
+{"id": 7, "query": "VPN is disconnecting every few minutes for remote employees."}
+{"id": 8, "query": "The attendance system is not marking entries for the operations team."}
+{"id": 9, "query": "Projector in boardroom is not working for today's client presentation."}
+{"id": 10, "query": "Outlook emails are not syncing for the sales team."}
+{"id": 11, "query": "I want to take earned leave from 8th May to 15th May for annual family trip."}
+{"id": 12, "query": "Requesting 2 days casual leave next week for personal reasons."}
+{"id": 13, "query": "I need medical leave for 4 days starting tomorrow due to surgery follow-up."}
+{"id": 14, "query": "Applying for paternity leave starting 1st June for 3 weeks."}
+{"id": 15, "query": "Requesting half day leave on 18th April for bank visit."}
+{"id": 16, "query": "Customer CUST9921 has not received his order ORD7789 even after 12 days. Route this to logistics team."}
+{"id": 17, "query": "Client CUST3344 is asking for immediate callback regarding pending payment invoice."}
+{"id": 18, "query": "Customer CUST8604 received wrong item in order ORD5566 and is very upset. Route to support."}
+{"id": 19, "query": "Customer CUST1122 wants status of his refund request for order ORD3344."}
+{"id": 20, "query": "Client is asking about bulk pricing discount for next quarter order. Route to sales."}
+{"id": 21, "query": "What is the company policy on work from home for parents with young children?"}
+{"id": 22, "query": "What are the rules for claiming cab reimbursement for site visits?"}
+{"id": 23, "query": "What is the approval limit for purchase requests above 1 lakh rupees?"}
+{"id": 24, "query": "How many sick leaves are allowed per year for employees?"}
+{"id": 25, "query": "What is the dress code policy for client meetings and office visits?"}

@@ -1,0 +1,25 @@
+{"prompt_id": 1, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 2, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 3, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST7845"}}
+{"prompt_id": 4, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 5, "expected_name": "create_it_ticket", "is_multi_tool": true, "min_tools": 1, "max_tools": 2, "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 6, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 7, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 8, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 9, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 10, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 11, "expected_name": "process_leave_request", "required_keys": [ "leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 12, "expected_name": "process_leave_request", "required_keys": [ "leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 13, "expected_name": "process_leave_request", "required_keys": [ "leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 14, "expected_name": "process_leave_request", "required_keys": [ "leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 15, "expected_name": "process_leave_request", "required_keys": [ "leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 16, "expected_name": "route_customer_query", "required_keys": ["query_type",  "priority", "department"]}
+{"prompt_id": 17, "expected_name": "route_customer_query", "required_keys": ["query_type",  "priority", "department"]}
+{"prompt_id": 18, "expected_name": "route_customer_query", "required_keys": ["query_type",  "priority", "department"]}
+{"prompt_id": 19, "expected_name": "route_customer_query", "required_keys": ["query_type",  "priority", "department"]}
+{"prompt_id": 20, "expected_name": "route_customer_query", "required_keys": ["query_type",  "priority", "department"]}
+{"prompt_id": 21, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 22, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 23, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 24, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 25, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
