@@ -1,0 +1,3291 @@
+Experiment 16 — 4-bit (Q4_K_S)
+============================================================
+
+Prompt ID: 1 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: The payment gateway is failing for all users in production. Please create a critical ticket.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Payment Gateway Failure in Production",
+    "description": "Payment gateway is failing for all users in production.",
+    "priority": "Critical",
+    "department": "Engineering"
+  }
+}
+--------------------------------------------------
+Prompt ID: 2 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: I need to apply for sick leave tomorrow because of fever.
+Response: {"name": "process_leave_request", "parameters": {"leave_type": "Sick", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "fever"}}
+--------------------------------------------------
+Prompt ID: 3 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the current policy for reimbursing project expenses above 50,000 rupees?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Reimbursement Policy",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 4 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: Create separate tickets for both the SAP CRM server issue and AC breakdown in Hyderabad office.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "SAP CRM Server Failure",
+    "description": "SAP CRM server experiencing system crashes and data inconsistencies.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 5 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: The main file server is inaccessible for the finance team since morning.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Main File Server Access Issue",
+    "description": "Main file server inaccessible for the finance team since morning",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 6 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: VPN is disconnecting every few minutes for remote employees.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "VPN Connectivity Issue",
+    "description": "VPN disconnects every 5-10 minutes for remote employees.",
+    "priority": "High",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 7 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: The attendance system is not marking entries for the operations team.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Attendance System Not Marking Entries for Operations Team",
+    "description": "The attendance system is not marking entries for the operations team.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 8 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: Projector in boardroom is not working for today's client presentation.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Projector Not Working in Boardroom for Presentation",
+    "description": "Projector not working for today's client presentation",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 9 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Outlook emails are not syncing for the sales team.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Outlook Sync Issue - Sales Team",
+    "description": "Outlook emails are not syncing for the sales team.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 10 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: I want to take earned leave from 8th May to 15th May for annual family trip. My employee id is EMP456
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-05-08",
+    "end_date": "2026-05-15",
+    "reason": "annual family trip"
+  }
+}
+--------------------------------------------------
+Prompt ID: 11 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Requesting 2 days casual leave next week for personal reasons. My employee id is EMP789
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-20",
+    "reason": "Personal Work"
+  }
+}
+--------------------------------------------------
+Prompt ID: 12 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: I need medical leave for 4 days starting tomorrow due to surgery follow-up. My employee id is EMP234
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-19",
+    "end_date": "2026-04-23",
+    "reason": "medical leave for 4 days starting tomorrow due to surgery follow-up"
+  }
+}
+--------------------------------------------------
+Prompt ID: 13 | Seed: 42 | Category: LEAVE_REQUEST | Status: 0 (invalid_enum:leave_type=Paternity)
+Query: Applying for paternity leave starting 1st June for 3 weeks. My employee id is EMP567
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Paternity",
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-04",
+    "reason": "Paternity Leave"
+  }
+}
+--------------------------------------------------
+Prompt ID: 14 | Seed: 42 | Category: LEAVE_REQUEST | Status: 0 (invalid_enum:leave_type=Sick)
+Query: Requesting half day leave on 18th April for bank visit. My employee id is EMP890
+Response: {"name": "process_leave_request", "parameters": {"leave_type": "Sick", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "bank visit"}}
+--------------------------------------------------
+Prompt ID: 15 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer CUST9921 has not received his order ORD7789 even after 12 days. Route this to logistics team.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Status Request",
+    "customer_id": "CUST9921",
+    "priority": "Medium",
+    "department": "Logistics"
+  }
+}
+--------------------------------------------------
+Prompt ID: 16 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Client CUST3344 is asking for immediate callback regarding pending payment invoice.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Callback Request",
+    "customer_id": "CUST3344",
+    "priority": "High",
+    "department": "Finance"
+  }
+}
+--------------------------------------------------
+Prompt ID: 17 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer received wrong item in order ORD5566 and is very upset. Route to support.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Refund Request",
+    "customer_id": "ORD5566",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 18 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer CUST1122 wants status of his refund request for order ORD3344.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Status Request",
+    "customer_id": "CUST1122",
+    "priority": "Medium",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 19 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the company policy on work from home for parents with young children?
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "Work From Home Policy", "department": "HR"}}
+--------------------------------------------------
+Prompt ID: 20 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What are the rules for claiming cab reimbursement for site visits?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "cab reimbursement for site visits",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 21 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the approval limit for purchase requests above 1 lakh rupees?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Approval Limit for Purchase Requests",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 22 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: How many sick leaves are allowed per year for employees?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "sick leave policy",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 23 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: The keyboard on my workstation is not responding. Some keys are stuck.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Keyboard Not Responding - Stuck Keys",
+    "description": "Keyboard on workstation is not responding, some keys are stuck.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 24 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: Internet speed in the office is extremely slow since morning. Affecting all work.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Internet Speed is Extremely Slow",
+    "description": "Affecting all work",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 25 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: SAP system is not loading for anyone in the finance department. Critical for month-end closing.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "SAP system not loading in finance department",
+    "description": "SAP system fails to load for finance department users during month-end closing",
+    "priority": "Critical",
+    "department": "Finance"
+  }
+}
+--------------------------------------------------
+Prompt ID: 26 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: VPN access is being denied when I try to connect from home. Error code 401.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "VPN Access Denied - Error Code 401",
+    "description": "When connecting via VPN from home, the access is denied with error code 401.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 27 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: AC in the server room is not working. Temperature is rising and could damage equipment.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Power Supply Not Working - Server Room",
+    "description": "AC in the server room is not functioning, and the temperature is rising, potentially damaging equipment.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 28 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Low)
+Query: Office emails are not loading on my mobile phone since the last update.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Emails not loading on mobile phone after update",
+    "description": "Office emails are not loading on my mobile phone since the last update.",
+    "priority": "Low",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 29 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: The office printer on 3rd floor is jamming every time we try to print.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Printer Jam - Floor 3",
+    "description": "Office printer jammed on the third floor",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 30 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: WiFi is not working in conference room A. We have meetings all day.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "WiFi Connectivity Issue in Conference Room A",
+    "description": "WiFi is not working in conference room A, causing disruptions during meetings.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 31 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: Database server crashed and all records are inaccessible. Multiple applications are affected.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Database Server Crash and Data Inaccessibility",
+    "description": "Database server crashed and all records are inaccessible, causing application inaccessibility.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 32 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: My account got locked after multiple failed login attempts. I cannot access my system.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Account Locked Due to Multiple Failed Logins",
+    "description": "My account was locked after multiple failed login attempts. I cannot access my system.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 33 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Microsoft Teams calls keep dropping every few minutes. Remote meetings are impossible.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Microsoft Teams Call Drop Interval and Remote Meeting Issues",
+    "description": "Microsoft Teams calls drop every few minutes, and remote meetings are not possible.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 34 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: My mouse and keyboard are both unresponsive. System is on but I cannot do anything.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Mouse/Keyboard Unresponsive",
+    "description": "Mouse and keyboard unresponsive; system is on but input functionality is disabled.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 35 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: Our company website is down. Customers cannot place orders. Need immediate fix.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Website Down - Order Placement Blocked",
+    "description": "Company website is down; customers cannot place orders.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 36 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: Antivirus software is blocking our internal business application. Work is halted for our team.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Antivirus Blocking Business Application - Work Halts",
+    "description": "Antivirus software is blocking our internal business application, causing a work halt for the team.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 37 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: There was a power cut and the backup generator is not coming on. Server room is at risk.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Power Outage and Backup Generator Failure",
+    "description": "Power cut and backup generator not functioning, risking server room safety.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 38 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: My workstation is running very slowly. Applications take 5 minutes to open.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Workstation Performance - Slow Processing",
+    "description": "Workstation is running slowly, applications take 5 minutes to open.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 39 | Seed: 42 | Category: LEAVE_REQUEST | Status: 0 (wrong_tool)
+Query: New joiner Priya Sharma joined today and needs laptop and system access configured.
+Response: {"name": "process_leave_request", "parameters": {"leave_type": "New Joiner", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "laptop and system access configured"}}
+--------------------------------------------------
+Prompt ID: 40 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: The shared network drive is not accessible for the entire operations team since 9 AM.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Shared Network Drive Access Issue",
+    "description": "Shared network drive is inaccessible for the operations team since 9 AM",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 41 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: Excel is crashing every time I try to open files larger than 10MB.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Excel file size exceeds 10MB crash",
+    "description": "Excel crashes when opening files larger than 10MB",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 42 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: The payment system is processing duplicate transactions. Customer accounts being charged twice. URGENT.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Duplicate Transaction Processing",
+    "description": "Payment system processes duplicate transactions and charges customer accounts twice.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 43 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: My monitor is flickering constantly. Makes it hard to work for long hours.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Monitor Flickering Issue",
+    "description": "Monitor flickers constantly, causing difficulty working for long hours.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 44 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: Our software license for Adobe Creative Suite expired and the design team cannot work.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Adobe Creative Suite License Expired and Design Team Operational Issue",
+    "description": "Software license for Adobe Creative Suite expired, affecting Adobe Creative Suite design team's operational capacity.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 45 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Two-factor authentication is not sending OTPs to my registered mobile number.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Two-Factor Authentication OTP Not Sent",
+    "description": "Two-factor authentication is not sending OTPs to the registered mobile number.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 46 | Seed: 42 | Category: IT_TICKET | Status: 0 (missing_key:priority)
+Query: The MIS reporting tool is showing incorrect figures for last quarter. Audit is tomorrow.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "MIS Reporting Tool - Incorrect Quarter Data",
+    "description": "MIS reporting tool is showing incorrect figures for the last quarter.",
+    "priority": "",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 47 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: CCTV cameras on floor 2 are not recording. Security concern after recent incidents.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "CCTV Camera Recording Issue",
+    "description": "CCTV cameras on floor 2 are not recording. Security concern after recent incidents.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 48 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: My laptop is overheating and shutting down automatically after 30 minutes of use.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Laptop overheating and shutdown after 30 minutes",
+    "description": "Laptop overheating and shutting down automatically after 30 minutes of use",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 49 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=High)
+Query: Automated data backup failed last night. We have no backup of yesterday's work.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Data Backup Failure - No Backup History Found",
+    "description": "Automated data backup failed last night. No backup of yesterday's work was available.",
+    "priority": "High",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 50 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: There is water leaking from the ceiling directly above the main server rack. Emergency!
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Water Leak from Ceiling Above Server Rack",
+    "description": "Water leaking from the ceiling above the main server rack.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 51 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 0 (wrong_tool)
+Query: I do not have access to the HR portal folders I need. Getting permission denied error.
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Access Denied",
+    "department": "HR/Finance/IT"
+  }
+}
+--------------------------------------------------
+Prompt ID: 52 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Payroll software is not calculating correct salary for this month. Salaries go out tomorrow.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Payroll Calculation Error - Monthly Salaries",
+    "description": "Payroll software is not calculating correct salaries for this month, with salaries due tomorrow.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 53 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: My desk phone is not working. No dial tone and calls go to voicemail directly.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Desk Phone Not Working with Dial Tone and Voicemail",
+    "description": "My desk phone is not working. No dial tone and calls go to voicemail directly.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 54 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Office internet is extremely slow today, whole office affected, downloads take 10x longer.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Internet Connection Slow - Office",
+    "description": "Office internet is extremely slow, affecting all the office, with downloads taking 10x longer.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 55 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: CRM system is not syncing new customer data from the mobile sales app. Data loss risk.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "CRM System Sync Issue - Mobile Sales App Data Sync Failure",
+    "description": "CRM system fails to sync new customer data from mobile sales app, resulting in potential data loss risk.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 56 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Low)
+Query: External contractor Rahul needs temporary VPN and system access for the next 2 weeks.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Temporary VPN and System Access Required",
+    "description": "External contractor Rahul requires temporary virtual private network (VPN) and system access for the next 2 weeks.",
+    "priority": "Low",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 57 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=High)
+Query: Our mobile app keeps crashing immediately after users log in. Thousands of users affected.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Mobile App Crash After Login",
+    "description": "Mobile app crashes immediately after users log in, affecting thousands of users.",
+    "priority": "High",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 58 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: The office scanner on ground floor is not connecting to the network.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Scanner not connecting to network - Ground Floor",
+    "description": "Office scanner on ground floor is not connecting to the network.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 59 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Automated reports are not being emailed to management at 8 AM as scheduled.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Automated Email Reporting Not Scheduled",
+    "description": "Automated reports are not being emailed to management at 8 AM as scheduled.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 60 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: Firewall is blocking access to a client external project portal. Team cannot work.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Firewall Access Block - External Project Portal",
+    "description": "Firewall is blocking access to a client external project portal.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 61 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Headset audio quality on my laptop is very poor with lots of static noise during calls.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Headset Audio Quality - Poor Sound with Static",
+    "description": "Headset audio quality is very poor with lots of static noise during calls.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 62 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: Suspected data breach - unauthorised login detected from unknown IP address to our system.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Suspected Data Breach - Unauthorised Login Detected",
+    "description": "A suspected data breach was detected from an unknown IP address to our system, indicating potential security risks.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 63 | Seed: 42 | Category: IT_TICKET | Status: 1 (ok)
+Query: HR portal is not loading at all. Getting 503 service unavailable error.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "HR Portal Not Loading",
+    "description": "HR portal is not loading at all. Getting 503 service unavailable error.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 64 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: Cannot connect to remote desktop to access office machine from home. Connection times out.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Remote Desktop Connection Timeout",
+    "description": "Cannot connect to remote desktop from home; connection timeouts occurred.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 65 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Fingerprint scanner at the office entrance is not recognising any employees since 7 AM.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Fingerprint Scanner Not Recognizing Employees",
+    "description": "Fingerprint scanner at the office entrance is not recognizing employees since 7 AM.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 66 | Seed: 42 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: The UPS system shows a red fault light. We may lose power to servers if it fails.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "UPS System Red Fault Light - Critical Risk",
+    "description": "UPS system displays a red fault light, potentially leading to power loss to servers.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 67 | Seed: 42 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: I have a bad cold and cough. Requesting sick leave for today and tomorrow.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "Sick", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "cold and cough"}}}
+--------------------------------------------------
+Prompt ID: 68 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Planning a family vacation next month from June 3rd to June 10th. Need earned leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-06-03",
+    "end_date": "2026-06-10",
+    "reason": "earned leave"
+  }
+}
+--------------------------------------------------
+Prompt ID: 69 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: I need casual leave this Saturday for my cousin's engagement ceremony.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-20",
+    "reason": "personal work"
+  }
+}
+--------------------------------------------------
+Prompt ID: 70 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Tested positive for COVID. Doctor advised 7-day home isolation. Applying for sick leave from today.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "positive test for COVID, 7-day home isolation"
+  }
+}
+--------------------------------------------------
+Prompt ID: 71 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Getting married on May 20th. Requesting earned leave from May 18 to June 1 for wedding and honeymoon.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-05-18",
+    "end_date": "2026-06-01",
+    "reason": "wedding and honeymoon"
+  }
+}
+--------------------------------------------------
+Prompt ID: 72 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need to visit the regional passport office tomorrow morning. Requesting half day casual leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "half day casual leave"
+  }
+}
+--------------------------------------------------
+Prompt ID: 73 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: My child is unwell and needs to be taken to the doctor today. Requesting sick leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "unwell and needs to be taken to the doctor today"
+  }
+}
+--------------------------------------------------
+Prompt ID: 74 | Seed: 42 | Category: LEAVE_REQUEST | Status: 0 (invalid_enum:leave_type=Annual Leave)
+Query: I want to apply for my annual leave from July 1 to July 14. Planning a trip abroad.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Annual Leave",
+    "start_date": "2026-07-01",
+    "end_date": "2026-07-14",
+    "reason": "Planning a trip abroad"
+  }
+}
+--------------------------------------------------
+Prompt ID: 75 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Moving to a new house this weekend. Need Friday and Monday as casual leave for shifting.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-05-05",
+    "end_date": "2026-05-05",
+    "reason": "shifting"
+  }
+}
+--------------------------------------------------
+Prompt ID: 76 | Seed: 42 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: Running high fever since morning. Not in condition to work. Need sick leave today.
+Response: ERROR
+--------------------------------------------------
+Prompt ID: 77 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Planning a Europe trip with family from August 10th to August 25th. Applying for earned leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-08-10",
+    "end_date": "2026-08-25",
+    "reason": "Europe trip with family"
+  }
+}
+--------------------------------------------------
+Prompt ID: 78 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need half day casual leave tomorrow afternoon for some personal work.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "personal work"
+  }
+}
+--------------------------------------------------
+Prompt ID: 79 | Seed: 42 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: Have a morning hospital appointment tomorrow for check-up. Need half day sick leave.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "Earned", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "check-up, half day sick leave"}}}
+--------------------------------------------------
+Prompt ID: 80 | Seed: 42 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: My sister's wedding is next week from Thursday to Sunday. Need 4 days earned leave.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "Earned", "start_date": "2026-05-20", "end_date": "2026-05-20", "reason": "4 days earned leave"}}}
+--------------------------------------------------
+Prompt ID: 81 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need to get my vehicle registration renewed. Requesting 1 casual leave day tomorrow.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-01-01",
+    "end_date": "2026-01-01",
+    "reason": "vehicle registration renewal"
+  }
+}
+--------------------------------------------------
+Prompt ID: 82 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (wrong_tool)
+Query: Suffering from stomach infection with vomiting. Doctor has advised 3 days rest. Applying for sick leave.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Sick Leave Request",
+    "customer_id": "",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 83 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need 5 days earned leave in May for my kids summer camp trip from May 22 to May 26.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-05-22",
+    "end_date": "2026-05-26",
+    "reason": "my kids summer camp trip"
+  }
+}
+--------------------------------------------------
+Prompt ID: 84 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: I have a court hearing tomorrow morning. Need casual leave for the day.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-20",
+    "reason": "court hearing tomorrow morning for the day"
+  }
+}
+--------------------------------------------------
+Prompt ID: 85 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Diagnosed with dengue fever. Doctor recommends 7 days bed rest. Requesting sick leave from today.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "bed rest"
+  }
+}
+--------------------------------------------------
+Prompt ID: 86 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: My brother's wedding is from September 5th to September 9th. Requesting 5 days earned leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-09-05",
+    "end_date": "2026-09-09",
+    "reason": "5 days earned leave"
+  }
+}
+--------------------------------------------------
+Prompt ID: 87 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need casual leave urgently today for an important bank matter that cannot be postponed.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-20",
+    "reason": "important bank matter that cannot be postponed"
+  }
+}
+--------------------------------------------------
+Prompt ID: 88 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Having severe back pain. Physiotherapist has advised 3 days rest. Requesting sick leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-20",
+    "reason": "Physiotherapist has advised 3 days rest."
+  }
+}
+--------------------------------------------------
+Prompt ID: 89 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Applying for 5 days earned leave from October 2 for my parents anniversary celebration trip.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-10-02",
+    "end_date": "2026-10-02",
+    "reason": "parents' anniversary celebration trip"
+  }
+}
+--------------------------------------------------
+Prompt ID: 90 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need casual leave on 25th April for my passport renewal appointment.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-04-25",
+    "end_date": "2026-04-25",
+    "reason": "passport renewal appointment"
+  }
+}
+--------------------------------------------------
+Prompt ID: 91 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Terrible migraine, unable to look at screen. Need sick leave today please.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "Terrible migraine, unable to look at screen."
+  }
+}
+--------------------------------------------------
+Prompt ID: 92 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Kids school annual vacation begins May 29th. Requesting earned leave from May 29 to June 5.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-05-29",
+    "end_date": "2026-06-05",
+    "reason": "earned leave from May 29 to June 5"
+  }
+}
+--------------------------------------------------
+Prompt ID: 93 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Attending an external leadership training seminar on 22nd April. Need casual leave for the day.
+Response: {"name": "process_leave_request", "parameters": {"leave_type": "Casual", "start_date": "2026-04-22", "end_date": "2026-04-22", "reason": "personal work"}}
+--------------------------------------------------
+Prompt ID: 94 | Seed: 42 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: Had knee surgery last week, doctor says need 2 more days rest. Sick leave for Monday and Tuesday.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "Sick", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "need 2 more days rest"}}}
+--------------------------------------------------
+Prompt ID: 95 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Planning Diwali holidays from Oct 28 to Nov 4. Request earned leave for this period.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-10-28",
+    "end_date": "2026-11-04",
+    "reason": "Planning Diwali holidays"
+  }
+}
+--------------------------------------------------
+Prompt ID: 96 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need casual leave tomorrow to get my driving licence renewed at the RTO.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "driving licence renewal at the RTO"
+  }
+}
+--------------------------------------------------
+Prompt ID: 97 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Had severe food poisoning last night. Still very weak. Requesting sick leave for today and tomorrow.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-05-20",
+    "reason": "severe food poisoning last night. Still very weak. Requesting sick leave for today and tomorrow"
+  }
+}
+--------------------------------------------------
+Prompt ID: 98 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Planning year-end family vacation from December 22 to January 2. Requesting earned leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-01-02",
+    "end_date": "2026-02-02",
+    "reason": "Planning year-end family vacation from December 22 to January 2. Requesting earned leave."
+  }
+}
+--------------------------------------------------
+Prompt ID: 99 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Parent-teacher meeting at my son's school is tomorrow morning. Need half day casual leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "half day casual leave"
+  }
+}
+--------------------------------------------------
+Prompt ID: 100 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Had wisdom tooth removal yesterday. Still in pain, doctor advised 2 days rest. Sick leave please.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "Rest for 2 days"
+  }
+}
+--------------------------------------------------
+Prompt ID: 101 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Friend's destination wedding in Goa from November 14 to 17. Requesting 4 days earned leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-11-14",
+    "end_date": "2026-11-17",
+    "reason": "4 days earned leave"
+  }
+}
+--------------------------------------------------
+Prompt ID: 102 | Seed: 42 | Category: IT_TICKET | Status: 0 (wrong_tool)
+Query: Emergency water pipe burst at home. Plumber coming today, cannot leave. Need casual leave.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Water Pipe Emergency Burst - Home",
+    "description": "Emergency water pipe burst occurred at the home. Plumber is expected to arrive today and cannot leave.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 103 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (wrong_tool)
+Query: Eye infection, doctor has prescribed eye drops and rest for 2 days. Applying for sick leave.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Sick Leave Request",
+    "customer_id": "",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 104 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Want to take earned leave from December 26 to December 31 for year-end break.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-12-26",
+    "end_date": "2026-12-31",
+    "reason": "year-end break"
+  }
+}
+--------------------------------------------------
+Prompt ID: 105 | Seed: 42 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: Need casual leave tomorrow for personal mental health reasons.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "Casual", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "personal mental health reasons"}}}
+--------------------------------------------------
+Prompt ID: 106 | Seed: 42 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Running very high fever of 103 degrees since last night. Completely bedridden. Sick leave today please.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "Fever"
+  }
+}
+--------------------------------------------------
+Prompt ID: 107 | Seed: 42 | Category: IT_TICKET | Status: 0 (wrong_tool)
+Query: Order ORD778899 is delayed by 15 days. Customer CUST5001 is very angry and threatening to cancel.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Order Delayed by 15 Days",
+    "description": "Customer CUST5001 is very angry and threatening to cancel.",
+    "priority": "High",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 108 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Customer CUST5002 received a medium size shirt instead of XL they ordered.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Size Request",
+    "customer_id": "CUST5002",
+    "priority": "Medium"
+  }
+}
+--------------------------------------------------
+Prompt ID: 109 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5003 says their refund for returned order ORD6677 has not been credited after 2 weeks.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Refund Request",
+    "customer_id": "CUST5003",
+    "priority": "Medium"
+  }
+}
+--------------------------------------------------
+Prompt ID: 110 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer CUST5004 was charged twice for the same order. Requesting immediate reversal.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Refund Request",
+    "customer_id": "CUST5004",
+    "priority": "High",
+    "department": "Finance"
+  }
+}
+--------------------------------------------------
+Prompt ID: 111 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Client received a damaged product. Box was crushed and item inside is broken. Order ORD9988.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Damage Report",
+    "customer_id": "",
+    "priority": "Low",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 112 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: International shipment for CUST5005 stuck in customs for 20 days. Customer needs goods urgently.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Shipment Issue",
+    "customer_id": "CUST5005",
+    "priority": "High",
+    "department": "Logistics"
+  }
+}
+--------------------------------------------------
+Prompt ID: 113 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer CUST5006 wants to cancel order ORD4455 placed 30 minutes ago. Order not yet shipped.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Cancellation",
+    "customer_id": "CUST5006",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 114 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5007 received a completely different product from what was ordered. Needs immediate resolution.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Product Issue",
+    "customer_id": "CUST5007",
+    "priority": "High"
+  }
+}
+--------------------------------------------------
+Prompt ID: 115 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Client CUST5008 disputes the invoice amount. They were charged 20 percent more than the agreed price.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Invoice Dispute",
+    "customer_id": "CUST5008",
+    "priority": "High"
+  }
+}
+--------------------------------------------------
+Prompt ID: 116 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer says tracking for order ORD3322 has not updated in 7 days. They are worried.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Status Request",
+    "customer_id": "ORD3322",
+    "priority": "Medium",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 117 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: CUST5009 received only partial refund. They returned 3 items but got refund for only 1.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Refund Request",
+    "customer_id": "CUST5009",
+    "priority": "Low",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 118 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Product received by CUST5010 looks completely different from the website pictures. Not as described.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Product Discrepancy",
+    "customer_id": "CUST5010",
+    "priority": "Medium"
+  }
+}
+--------------------------------------------------
+Prompt ID: 119 | Seed: 42 | Category: IT_TICKET | Status: 0 (wrong_tool)
+Query: VIP customer CUST5011 has not received their premium order after 10 days. They are very upset. Escalate immediately.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Critical - VIP Customer CUST5011 Order Delay",
+    "description": "The VIP customer CUST5011's premium order was not delivered after 10 days, leading to customer dissatisfaction.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 120 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Customer CUST5012 made payment but did not receive a payment confirmation email or receipt.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Payment Confirmation",
+    "customer_id": "CUST5012",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 121 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Package delivered to CUST5013 had only 2 out of 5 ordered items inside. Missing 3 items.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Missing Items",
+    "customer_id": "CUST5013",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 122 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Perishable food items ordered by CUST5014 are delayed by 5 days and may now be spoiled.
+Response: {"name": "route_customer_query", "parameters": {"query_type": "Delivery Delay", "customer_id": "CUST5014", "priority": "Medium", "department": "Logistics"}}
+--------------------------------------------------
+Prompt ID: 123 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Client wants to exchange the jacket they bought for a larger size. Order ORD7788.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Exchange Request",
+    "customer_id": "CUST7788",
+    "priority": "Medium"
+  }
+}
+--------------------------------------------------
+Prompt ID: 124 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5015 received someone else's order. Their order went to a different address. Delivery mix-up.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Delivery Mix-Up",
+    "customer_id": "CUST5015",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 125 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Payment failed at checkout for CUST5016 but amount was deducted from bank. Order not placed.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Status Request",
+    "customer_id": "CUST5016",
+    "priority": "High"
+  }
+}
+--------------------------------------------------
+Prompt ID: 126 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Courier is not attempting delivery for CUST5017 order. Driver is not calling or coming to address.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Delivery Issue",
+    "customer_id": "CUST5017",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 127 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: CUST5018 has a defective product that stopped working within 2 months. Warranty claim to be processed.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Warranty Claim",
+    "customer_id": "CUST5018",
+    "priority": "Low",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 128 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Enterprise client wants bulk pricing for 500 units for next quarter. Route to sales team.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Bulk Pricing Request",
+    "customer_id": "",
+    "priority": "Medium",
+    "department": "Sales"
+  }
+}
+--------------------------------------------------
+Prompt ID: 129 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer CUST5019 gave wrong delivery address. Order ORD8899 not yet shipped, needs address update.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Address Issue",
+    "customer_id": "CUST5019",
+    "priority": "Low",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 130 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5020 returned goods last week and is now requesting a full refund to their card.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Refund Request",
+    "customer_id": "CUST5020",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 131 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Client CUST5021 is questioning an unexpected subscription charge on their account this month.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Subscription Charge Inquiry",
+    "customer_id": "CUST5021",
+    "priority": "Low",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 132 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer has not received their GST invoice for purchases made last month. Needed for accounts.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Invoice Request",
+    "customer_id": "",
+    "priority": "Medium",
+    "department": "Accounts"
+  }
+}
+--------------------------------------------------
+Prompt ID: 133 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Delivery packaging was badly damaged when received. Product inside seems fine but customer is unhappy.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Delivery Issue",
+    "customer_id": "",
+    "priority": "Medium",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 134 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5022 import order stuck at customs for 10 days. Need documentation support urgently.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Import Stuck",
+    "customer_id": "CUST5022",
+    "priority": "High"
+  }
+}
+--------------------------------------------------
+Prompt ID: 135 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Customer payment was debited twice from their account. Bank confirms double deduction.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Payment Deletion",
+    "customer_id": "",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 136 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5023 ordered 10 units but only received 7. Quantity short by 3 items in delivery.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Status Request",
+    "customer_id": "CUST5023",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 137 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5024 has raised this complaint 3 times and it is still unresolved. Needs escalation to senior management.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Resolution Request",
+    "customer_id": "CUST5024",
+    "priority": "Medium"
+  }
+}
+--------------------------------------------------
+Prompt ID: 138 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Order was for a birthday gift needed by tomorrow. Delivery still not arrived. Customer very distressed.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Delivery Issue",
+    "customer_id": "",
+    "priority": "High",
+    "department": "Logistics"
+  }
+}
+--------------------------------------------------
+Prompt ID: 139 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer CUST5025 placed order 2 hours ago and wants to cancel immediately. Please process.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Cancellation Request",
+    "customer_id": "CUST5025",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 140 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Client found same product at a lower price on competitor website and wants a price match.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Price Match Request",
+    "customer_id": "",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 141 | Seed: 42 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer CUST5026 says delivery was very fast and packaging was excellent. Wants to compliment the team.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Compliment Request",
+    "customer_id": "CUST5026",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 142 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: How many work-from-home days are employees allowed per week under the current WFH policy?
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "Work From Home Policy", "department": "HR"}}
+--------------------------------------------------
+Prompt ID: 143 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the process for booking flights for official travel and getting reimbursement?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Travel Reimbursement Policy",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 144 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What documents do I need to submit for a medical reimbursement claim?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "medical reimbursement claim documents",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 145 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the procedure for employees to withdraw their PF amount?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Public Benefit Withdrawal Procedure",
+    "department": "Finance"
+  }
+}
+--------------------------------------------------
+Prompt ID: 146 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: When is the annual performance review cycle and how are ratings decided?
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "Performance Review Cycle", "department": "HR"}}
+--------------------------------------------------
+Prompt ID: 147 | Seed: 42 | Category: LEAVE_REQUEST | Status: 0 (wrong_tool)
+Query: What is the standard notice period for resigning employees at our company?
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "Fever"
+  }
+}
+--------------------------------------------------
+Prompt ID: 148 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the company retirement age policy and what benefits does a retiring employee receive?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "retirement age policy",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 149 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the annual training and development budget allocated per employee?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Annual Training and Development Budget Allocation",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 150 | Seed: 42 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the employee referral bonus amount if my referred candidate joins the company?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Employee Referral Bonus Policy",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 1 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: The payment gateway is failing for all users in production. Please create a critical ticket.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Payment Gateway Failure in Production",
+    "description": "Payment gateway is failing for all users in production.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 2 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: I need to apply for sick leave tomorrow because of fever.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "fever"
+  }
+}
+--------------------------------------------------
+Prompt ID: 3 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the current policy for reimbursing project expenses above 50,000 rupees?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "current policy",
+    "department": "Finance"
+  }
+}
+--------------------------------------------------
+Prompt ID: 4 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: Create separate tickets for both the SAP CRM server issue and AC breakdown in Hyderabad office.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "SAP CRM Server Failure",
+    "description": "SAP CRM server is experiencing performance issues and data inconsistencies.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 5 | Seed: 999 | Category: IT_TICKET | Status: 0 (missing_key:priority)
+Query: The main file server is inaccessible for the finance team since morning.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "File Server Access Issue - Finance Team",
+    "description": "Main file server inaccessible for the finance team since morning.",
+    "priority": "",
+    "department": "Finance Team"
+  }
+}
+--------------------------------------------------
+Prompt ID: 6 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: VPN is disconnecting every few minutes for remote employees.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "VPN Connectivity Issue",
+    "description": "VPN is disconnecting every 5-10 minutes for remote employees.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 7 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: The attendance system is not marking entries for the operations team.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Attendance system not marking operations team entries",
+    "description": "The attendance system fails to mark entries for the operations team.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 8 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: Projector in boardroom is not working for today's client presentation.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Projector Not Working in Boardroom for Presentation",
+    "description": "Projector in boardroom is not working for today's client presentation.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 9 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Outlook emails are not syncing for the sales team.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Outlook Sync Issue - Sales Team",
+    "description": "Outlook emails are not syncing for the sales team.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 10 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: I want to take earned leave from 8th May to 15th May for annual family trip. My employee id is EMP456
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-05-08",
+    "end_date": "2026-05-15",
+    "reason": "annual family trip"
+  }
+}
+--------------------------------------------------
+Prompt ID: 11 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Requesting 2 days casual leave next week for personal reasons. My employee id is EMP789
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-20",
+    "reason": "personal work"
+  }
+}
+--------------------------------------------------
+Prompt ID: 12 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (invalid_enum:leave_type=Medical)
+Query: I need medical leave for 4 days starting tomorrow due to surgery follow-up. My employee id is EMP234
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Medical",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "surgery follow-up"
+  }
+}
+--------------------------------------------------
+Prompt ID: 13 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (invalid_enum:leave_type=Paternity)
+Query: Applying for paternity leave starting 1st June for 3 weeks. My employee id is EMP567
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Paternity",
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-04",
+    "reason": "paternity leave"
+  }
+}
+--------------------------------------------------
+Prompt ID: 14 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (invalid_enum:leave_type=Sick)
+Query: Requesting half day leave on 18th April for bank visit. My employee id is EMP890
+Response: {"name": "process_leave_request", "parameters": {"leave_type": "Sick", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "bank visit"}}
+--------------------------------------------------
+Prompt ID: 15 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Customer CUST9921 has not received his order ORD7789 even after 12 days. Route this to logistics team.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Delivery Issue",
+    "customer_id": "CUST9921",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 16 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Client CUST3344 is asking for immediate callback regarding pending payment invoice.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Callback Request",
+    "customer_id": "CUST3344",
+    "priority": "High",
+    "department": "Finance"
+  }
+}
+--------------------------------------------------
+Prompt ID: 17 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer received wrong item in order ORD5566 and is very upset. Route to support.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Refund Request",
+    "customer_id": "ORD5566",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 18 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer CUST1122 wants status of his refund request for order ORD3344.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Status Request",
+    "customer_id": "CUST1122",
+    "priority": "Medium",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 19 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the company policy on work from home for parents with young children?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Work from home for parents with young children",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 20 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What are the rules for claiming cab reimbursement for site visits?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Cab Reimbursement Policy",
+    "department": "Finance"
+  }
+}
+--------------------------------------------------
+Prompt ID: 21 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the approval limit for purchase requests above 1 lakh rupees?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Purchase Request Approval Limit",
+    "department": "Finance"
+  }
+}
+--------------------------------------------------
+Prompt ID: 22 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: How many sick leaves are allowed per year for employees?
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "sick leaves per year", "department": "HR"}}
+--------------------------------------------------
+Prompt ID: 23 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: The keyboard on my workstation is not responding. Some keys are stuck.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Keyboard Not Responding - Workstation",
+    "description": "Keyboard on workstation is not responding; some keys are stuck.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 24 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: Internet speed in the office is extremely slow since morning. Affecting all work.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Internet Speed Slow - Office Network",
+    "description": "Internet speed is extremely slow since morning, affecting all work.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 25 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: SAP system is not loading for anyone in the finance department. Critical for month-end closing.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "SAP System Not Loading in Finance Department",
+    "description": "SAP system is not loading for anyone in the finance department. Critical for month-end closing.",
+    "priority": "Critical",
+    "department": "Finance"
+  }
+}
+--------------------------------------------------
+Prompt ID: 26 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Low)
+Query: VPN access is being denied when I try to connect from home. Error code 401.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "VPN Access Denied - Error Code 401",
+    "description": "VPN access denied when connecting from home. Error code: 401.",
+    "priority": "Low",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 27 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: AC in the server room is not working. Temperature is rising and could damage equipment.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Server Room Power Failure and Temperature Rise",
+    "description": "AC power supply not functioning in the server room, leading to temperature rise and potential equipment damage.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 28 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: Office emails are not loading on my mobile phone since the last update.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Emails not loading on mobile phone after update",
+    "description": "Office emails are not loading on my mobile phone since the last update.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 29 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: The office printer on 3rd floor is jamming every time we try to print.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Printer Jam - Floor 3",
+    "description": "Office printer jammed on the third floor",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 30 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: WiFi is not working in conference room A. We have meetings all day.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "WiFi Connectivity Issue in Conference Room A",
+    "description": "WiFi is not working in conference room A, causing disruptions during meetings.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 31 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: Database server crashed and all records are inaccessible. Multiple applications are affected.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Database Server Crash and Data Inaccessibility",
+    "description": "Database server crashed and all records are inaccessible. Multiple applications are affected.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 32 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: My account got locked after multiple failed login attempts. I cannot access my system.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Account Locked Due to Multiple Failed Logins",
+    "description": "My account was locked after multiple failed login attempts. I cannot access my system.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 33 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: Microsoft Teams calls keep dropping every few minutes. Remote meetings are impossible.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Microsoft Teams Call Drop and Meeting Disconnection",
+    "description": "Microsoft Teams calls drop every few minutes, leading to remote meeting disconnection.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 34 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: My mouse and keyboard are both unresponsive. System is on but I cannot do anything.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Mouse/Keyboard Unresponsive",
+    "description": "Mouse and keyboard are unresponsive; system is operational but input is not working.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 35 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: Our company website is down. Customers cannot place orders. Need immediate fix.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Website Down - Order Placement Blocked",
+    "description": "Company website is down, customers cannot place orders.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 36 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: Antivirus software is blocking our internal business application. Work is halted for our team.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Antivirus Blocking Business Application",
+    "description": "Internal business application blocked by antivirus software",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 37 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: There was a power cut and the backup generator is not coming on. Server room is at risk.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Power Outage and Backup Generator Failure",
+    "description": "Power cut and backup generator not functioning, risking server room safety.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 38 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: My workstation is running very slowly. Applications take 5 minutes to open.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Workstation Performance Issue",
+    "description": "Workstation is running slowly, applications take 5 minutes to open.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 39 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: New joiner Priya Sharma joined today and needs laptop and system access configured.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "", "start_date": "", "end_date": "", "reason": "" }}}
+--------------------------------------------------
+Prompt ID: 40 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: The shared network drive is not accessible for the entire operations team since 9 AM.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Shared Network Drive Access Issue",
+    "description": "Shared network drive is inaccessible for the operations team since 9 AM.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 41 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: Excel is crashing every time I try to open files larger than 10MB.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Excel File Size Limit - 10MB Threshold",
+    "description": "Excel crashes when opening files larger than 10MB.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 42 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: The payment system is processing duplicate transactions. Customer accounts being charged twice. URGENT.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Duplicate Transaction Processing",
+    "description": "Payment system processes duplicate transactions and charges customer accounts twice.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 43 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: My monitor is flickering constantly. Makes it hard to work for long hours.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Monitor Flickering Issue",
+    "description": "Monitor flickers constantly, causing difficulty working for long hours.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 44 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: Our software license for Adobe Creative Suite expired and the design team cannot work.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Adobe Creative Suite Software License Expired",
+    "description": "Software license for Adobe Creative Suite expired, affecting design team's ability to work.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 45 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Two-factor authentication is not sending OTPs to my registered mobile number.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Two-Factor Authentication OTP Not Sent",
+    "description": "Two-factor authentication is not sending OTPs to the registered mobile number.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 46 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: The MIS reporting tool is showing incorrect figures for last quarter. Audit is tomorrow.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "MIS Reporting Tool - Incorrect Quarter Data",
+    "description": "MIS reporting tool is showing incorrect figures for the last quarter.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 47 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: CCTV cameras on floor 2 are not recording. Security concern after recent incidents.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "CCTV Camera Recording Failure on Floor 2",
+    "description": "CCTV cameras on floor 2 are not recording as per security incident reports.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 48 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: My laptop is overheating and shutting down automatically after 30 minutes of use.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Laptop overheating and shutdown after 30 minutes",
+    "description": "Laptop overheating and shutting down automatically after 30 minutes of use",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 49 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: Automated data backup failed last night. We have no backup of yesterday's work.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Automated Data Backup Failure Last Night",
+    "description": "Automated data backup failed last night. No backup of yesterday's work was available.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 50 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: There is water leaking from the ceiling directly above the main server rack. Emergency!
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Water Leak from Server Ceiling",
+    "description": "Water leaking from the ceiling above the main server rack.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 51 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 0 (wrong_tool)
+Query: I do not have access to the HR portal folders I need. Getting permission denied error.
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Access Management",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 52 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Payroll software is not calculating correct salary for this month. Salaries go out tomorrow.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Payroll Calculation Error - Monthly Salaries",
+    "description": "Payroll software is not calculating correct salary for this month, data scheduled for tomorrow.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 53 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: My desk phone is not working. No dial tone and calls go to voicemail directly.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Desk Phone Not Working with Dial Tone and Voicemail",
+    "description": "Desk phone not working; no dial tone and calls go to voicemail directly.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 54 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Office internet is extremely slow today, whole office affected, downloads take 10x longer.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Internet Connection Slow - Office System",
+    "description": "Office internet connection is extremely slow, causing downloads to take 10 times longer due to network congestion.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 55 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: CRM system is not syncing new customer data from the mobile sales app. Data loss risk.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "CRM system sync issue - mobile sales app data loss",
+    "description": "CRM system not syncing new customer data from the mobile sales app, resulting in a data loss risk.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 56 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: External contractor Rahul needs temporary VPN and system access for the next 2 weeks.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Temporary VPN and System Access Needed",
+    "description": "External contractor Rahul requires temporary VPN and system access for the next 2 weeks.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 57 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: Our mobile app keeps crashing immediately after users log in. Thousands of users affected.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Mobile App Crash After Login",
+    "description": "Users report crashing immediately after logging in, affecting thousands of users.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 58 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: The office scanner on ground floor is not connecting to the network.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Scanner Not Connecting to Network - Ground Floor",
+    "description": "Office scanner on ground floor is not connecting to the network.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 59 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Automated reports are not being emailed to management at 8 AM as scheduled.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Automated Report Email Delay",
+    "description": "Automated reports are not being emailed to management at 8 AM as scheduled.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 60 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: Firewall is blocking access to a client external project portal. Team cannot work.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Firewall Access Block - External Project Portal",
+    "description": "Firewall is blocking access to an external project portal, preventing the team from working.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 61 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (wrong_tool)
+Query: Headset audio quality on my laptop is very poor with lots of static noise during calls.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Audio Quality Issue",
+    "customer_id": "",
+    "priority": "Medium",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 62 | Seed: 999 | Category: IT_TICKET | Status: 1 (ok)
+Query: Suspected data breach - unauthorised login detected from unknown IP address to our system.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Data Breach - Unauthorised Login Detected",
+    "description": "Suspected data breach occurred from an unknown IP address to our system.",
+    "priority": "Critical",
+    "department": "Security"
+  }
+}
+--------------------------------------------------
+Prompt ID: 63 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: HR portal is not loading at all. Getting 503 service unavailable error.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "HR Portal Not Loading",
+    "description": "HR portal is not loading at all. Getting 503 service unavailable error.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 64 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: Cannot connect to remote desktop to access office machine from home. Connection times out.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Remote Desktop Connection Timeout",
+    "description": "Cannot connect to remote desktop from home; connection times out.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 65 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Medium)
+Query: Fingerprint scanner at the office entrance is not recognising any employees since 7 AM.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Fingerprint Scanner Not Recognizing Employees",
+    "description": "Fingerprint scanner at the office entrance is not recognizing employees since 7 AM.",
+    "priority": "Medium",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 66 | Seed: 999 | Category: IT_TICKET | Status: 1 (partial_match:priority=Critical)
+Query: The UPS system shows a red fault light. We may lose power to servers if it fails.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "UPS System Red Fault Light - Critical Risk",
+    "description": "UPS system displays a red fault light, which could result in power loss to servers. This poses a critical risk.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 67 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: I have a bad cold and cough. Requesting sick leave for today and tomorrow.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "Sick", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "bad cold and cough"}}}
+--------------------------------------------------
+Prompt ID: 68 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Planning a family vacation next month from June 3rd to June 10th. Need earned leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-06-03",
+    "end_date": "2026-06-10",
+    "reason": "Planning a family vacation"
+  }
+}
+--------------------------------------------------
+Prompt ID: 69 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: I need casual leave this Saturday for my cousin's engagement ceremony.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-20",
+    "reason": "personal work"
+  }
+}
+--------------------------------------------------
+Prompt ID: 70 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: Tested positive for COVID. Doctor advised 7-day home isolation. Applying for sick leave from today.
+Response: {{"name": "process_leave_request", "parameters": {{ "leave_type": "Sick", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "positive test for COVID, 7-day home isolation"}}}}}
+--------------------------------------------------
+Prompt ID: 71 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Getting married on May 20th. Requesting earned leave from May 18 to June 1 for wedding and honeymoon.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-05-18",
+    "end_date": "2026-06-01",
+    "reason": "wedding and honeymoon"
+  }
+}
+--------------------------------------------------
+Prompt ID: 72 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: Need to visit the regional passport office tomorrow morning. Requesting half day casual leave.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "Casual", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "half day casual leave"}}}
+--------------------------------------------------
+Prompt ID: 73 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: My child is unwell and needs to be taken to the doctor today. Requesting sick leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "unwell and needs to be taken to the doctor today"
+  }
+}
+--------------------------------------------------
+Prompt ID: 74 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (invalid_enum:leave_type=Annual Leave)
+Query: I want to apply for my annual leave from July 1 to July 14. Planning a trip abroad.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Annual Leave",
+    "start_date": "2026-07-01",
+    "end_date": "2026-07-14",
+    "reason": "Planning a trip abroad"
+  }
+}
+--------------------------------------------------
+Prompt ID: 75 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Moving to a new house this weekend. Need Friday and Monday as casual leave for shifting.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-05-05",
+    "end_date": "2026-05-05",
+    "reason": "shifting"
+  }
+}
+--------------------------------------------------
+Prompt ID: 76 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Running high fever since morning. Not in condition to work. Need sick leave today.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "Running high fever since morning. Not in condition to work. Need sick leave today."
+  }
+}
+--------------------------------------------------
+Prompt ID: 77 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Planning a Europe trip with family from August 10th to August 25th. Applying for earned leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-08-10",
+    "end_date": "2026-08-25",
+    "reason": "Earned leave"
+  }
+}
+--------------------------------------------------
+Prompt ID: 78 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need half day casual leave tomorrow afternoon for some personal work.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "Personal Work"
+  }
+}
+--------------------------------------------------
+Prompt ID: 79 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: Have a morning hospital appointment tomorrow for check-up. Need half day sick leave.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "Sick", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "half day sick leave"}}}
+--------------------------------------------------
+Prompt ID: 80 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: My sister's wedding is next week from Thursday to Sunday. Need 4 days earned leave.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "Earned", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "4 days earned leave"}}}
+--------------------------------------------------
+Prompt ID: 81 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need to get my vehicle registration renewed. Requesting 1 casual leave day tomorrow.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "vehicle registration renewal 1 casual leave day tomorrow"
+  }
+}
+--------------------------------------------------
+Prompt ID: 82 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Suffering from stomach infection with vomiting. Doctor has advised 3 days rest. Applying for sick leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-01",
+    "end_date": "2026-04-04",
+    "reason": "stomach infection with vomiting and rest period advised by doctor"
+  }
+}
+--------------------------------------------------
+Prompt ID: 83 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need 5 days earned leave in May for my kids summer camp trip from May 22 to May 26.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-05-22",
+    "end_date": "2026-05-26",
+    "reason": "my kids summer camp trip"
+  }
+}
+--------------------------------------------------
+Prompt ID: 84 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: I have a court hearing tomorrow morning. Need casual leave for the day.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "court hearing tomorrow morning for the day"
+  }
+}
+--------------------------------------------------
+Prompt ID: 85 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Diagnosed with dengue fever. Doctor recommends 7 days bed rest. Requesting sick leave from today.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "bed rest due to dengue fever"
+  }
+}
+--------------------------------------------------
+Prompt ID: 86 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: My brother's wedding is from September 5th to September 9th. Requesting 5 days earned leave.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "Earned", "start_date": "2026-09-05", "end_date": "2026-09-09", "reason": "5 days earned leave" }}}
+--------------------------------------------------
+Prompt ID: 87 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need casual leave urgently today for an important bank matter that cannot be postponed.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-01-01",
+    "end_date": "2026-01-01",
+    "reason": "important bank matter that cannot be postponed"
+  }
+}
+--------------------------------------------------
+Prompt ID: 88 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: Having severe back pain. Physiotherapist has advised 3 days rest. Requesting sick leave.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "Sick", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "Severe back pain and physiotherapy rest for 3 days"}}}
+--------------------------------------------------
+Prompt ID: 89 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Applying for 5 days earned leave from October 2 for my parents anniversary celebration trip.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-10-02",
+    "end_date": "2026-10-02",
+    "reason": "parents' anniversary celebration trip"
+  }
+}
+--------------------------------------------------
+Prompt ID: 90 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need casual leave on 25th April for my passport renewal appointment.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-04-25",
+    "end_date": "2026-04-25",
+    "reason": "passport renewal appointment"
+  }
+}
+--------------------------------------------------
+Prompt ID: 91 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Terrible migraine, unable to look at screen. Need sick leave today please.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "migraine screen"
+  }
+}
+--------------------------------------------------
+Prompt ID: 92 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Kids school annual vacation begins May 29th. Requesting earned leave from May 29 to June 5.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-05-29",
+    "end_date": "2026-06-05",
+    "reason": "earned leave from May 29 to June 5"
+  }
+}
+--------------------------------------------------
+Prompt ID: 93 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Attending an external leadership training seminar on 22nd April. Need casual leave for the day.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-04-22",
+    "end_date": "2026-04-22",
+    "reason": "personal work"
+  }
+}
+--------------------------------------------------
+Prompt ID: 94 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Had knee surgery last week, doctor says need 2 more days rest. Sick leave for Monday and Tuesday.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-05-01",
+    "end_date": "2026-05-02",
+    "reason": "need 2 more days rest"
+  }
+}
+--------------------------------------------------
+Prompt ID: 95 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Planning Diwali holidays from Oct 28 to Nov 4. Request earned leave for this period.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-10-28",
+    "end_date": "2026-11-04",
+    "reason": "Planning Diwali holidays"
+  }
+}
+--------------------------------------------------
+Prompt ID: 96 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need casual leave tomorrow to get my driving licence renewed at the RTO.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "RTO"
+  }
+}
+--------------------------------------------------
+Prompt ID: 97 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Had severe food poisoning last night. Still very weak. Requesting sick leave for today and tomorrow.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-05-20",
+    "reason": "severe food poisoning last night. Still very weak. Requesting sick leave for today and tomorrow"
+  }
+}
+--------------------------------------------------
+Prompt ID: 98 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Planning year-end family vacation from December 22 to January 2. Requesting earned leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-01-02",
+    "end_date": "2026-01-02",
+    "reason": "Planning year-end family vacation from December 22 to January 2. Requesting earned leave."
+  }
+}
+--------------------------------------------------
+Prompt ID: 99 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: Parent-teacher meeting at my son's school is tomorrow morning. Need half day casual leave.
+Response: {{"name": "process_leave_request", "parameters": {{ "leave_type": "Casual", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "half day casual leave"}}}}
+--------------------------------------------------
+Prompt ID: 100 | Seed: 999 | Category: LEAVE_REQUEST | Status: 0 (json_parse_error)
+Query: Had wisdom tooth removal yesterday. Still in pain, doctor advised 2 days rest. Sick leave please.
+Response: {"name": "process_leave_request", "parameters": {{ "leave_type": "Sick", "start_date": "2026-04-18", "end_date": "2026-04-18", "reason": "in pain, doctor advised 2 days rest"}}}
+--------------------------------------------------
+Prompt ID: 101 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Friend's destination wedding in Goa from November 14 to 17. Requesting 4 days earned leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-11-14",
+    "end_date": "2026-11-17",
+    "reason": "4 days earned leave"
+  }
+}
+--------------------------------------------------
+Prompt ID: 102 | Seed: 999 | Category: IT_TICKET | Status: 0 (wrong_tool)
+Query: Emergency water pipe burst at home. Plumber coming today, cannot leave. Need casual leave.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Water Pipe Emergency - Home",
+    "description": "Emergency water pipe burst at home. Plumber arriving today and cannot leave.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 103 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Eye infection, doctor has prescribed eye drops and rest for 2 days. Applying for sick leave.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-20",
+    "reason": "Eye infection, doctor has prescribed eye drops and rest for 2 days."
+  }
+}
+--------------------------------------------------
+Prompt ID: 104 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Want to take earned leave from December 26 to December 31 for year-end break.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Earned",
+    "start_date": "2026-12-26",
+    "end_date": "2026-12-31",
+    "reason": "year-end break"
+  }
+}
+--------------------------------------------------
+Prompt ID: 105 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Need casual leave tomorrow for personal mental health reasons.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Casual",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "personal mental health reasons"
+  }
+}
+--------------------------------------------------
+Prompt ID: 106 | Seed: 999 | Category: LEAVE_REQUEST | Status: 1 (ok)
+Query: Running very high fever of 103 degrees since last night. Completely bedridden. Sick leave today please.
+Response: {
+  "name": "process_leave_request",
+  "parameters": {
+    "leave_type": "Sick",
+    "start_date": "2026-04-18",
+    "end_date": "2026-04-18",
+    "reason": "Fever"
+  }
+}
+--------------------------------------------------
+Prompt ID: 107 | Seed: 999 | Category: IT_TICKET | Status: 0 (wrong_tool)
+Query: Order ORD778899 is delayed by 15 days. Customer CUST5001 is very angry and threatening to cancel.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Order Delayed by 15 Days - Customer CUST5001",
+    "description": "Order ORD778899 is delayed by 15 days, with Customer CUST5001 expressing dissatisfaction and potential cancellation.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 108 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Customer CUST5002 received a medium size shirt instead of XL they ordered.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Size Request",
+    "customer_id": "CUST5002",
+    "priority": "Medium"
+  }
+}
+--------------------------------------------------
+Prompt ID: 109 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5003 says their refund for returned order ORD6677 has not been credited after 2 weeks.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Refund Request",
+    "customer_id": "CUST5003",
+    "priority": "Medium"
+  }
+}
+--------------------------------------------------
+Prompt ID: 110 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer CUST5004 was charged twice for the same order. Requesting immediate reversal.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Refund Request",
+    "customer_id": "CUST5004",
+    "priority": "High",
+    "department": "Finance"
+  }
+}
+--------------------------------------------------
+Prompt ID: 111 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Client received a damaged product. Box was crushed and item inside is broken. Order ORD9988.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Damage Report",
+    "customer_id": "",
+    "priority": "Low",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 112 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: International shipment for CUST5005 stuck in customs for 20 days. Customer needs goods urgently.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Shipment Stuck",
+    "customer_id": "CUST5005",
+    "priority": "High"
+  }
+}
+--------------------------------------------------
+Prompt ID: 113 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer CUST5006 wants to cancel order ORD4455 placed 30 minutes ago. Order not yet shipped.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Cancellation Request",
+    "customer_id": "CUST5006",
+    "priority": "High",
+    "department": "Logistics"
+  }
+}
+--------------------------------------------------
+Prompt ID: 114 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: CUST5007 received a completely different product from what was ordered. Needs immediate resolution.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Product Issue",
+    "customer_id": "CUST5007",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 115 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Client CUST5008 disputes the invoice amount. They were charged 20 percent more than the agreed price.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Invoice Dispute",
+    "customer_id": "CUST5008",
+    "priority": "High"
+  }
+}
+--------------------------------------------------
+Prompt ID: 116 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer says tracking for order ORD3322 has not updated in 7 days. They are worried.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Tracking Order",
+    "customer_id": "ORD3322",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 117 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5009 received only partial refund. They returned 3 items but got refund for only 1.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Refund Request",
+    "customer_id": "CUST5009",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 118 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Product received by CUST5010 looks completely different from the website pictures. Not as described.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Product Discrepancy",
+    "customer_id": "CUST5010",
+    "priority": "High"
+  }
+}
+--------------------------------------------------
+Prompt ID: 119 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: VIP customer CUST5011 has not received their premium order after 10 days. They are very upset. Escalate immediately.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Escalation Request",
+    "customer_id": "CUST5011",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 120 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Customer CUST5012 made payment but did not receive a payment confirmation email or receipt.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Payment Confirmation",
+    "customer_id": "CUST5012",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 121 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Package delivered to CUST5013 had only 2 out of 5 ordered items inside. Missing 3 items.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Missing Items",
+    "customer_id": "CUST5013",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 122 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Perishable food items ordered by CUST5014 are delayed by 5 days and may now be spoiled.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Delivery Delay",
+    "customer_id": "CUST5014",
+    "priority": "Medium",
+    "department": "Logistics"
+  }
+}
+--------------------------------------------------
+Prompt ID: 123 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Client wants to exchange the jacket they bought for a larger size. Order ORD7788.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Exchange Request",
+    "customer_id": "Client wants to exchange the jacket...",
+    "priority": "Medium",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 124 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5015 received someone else's order. Their order went to a different address. Delivery mix-up.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Delivery Mix-Up",
+    "customer_id": "CUST5015",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 125 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Payment failed at checkout for CUST5016 but amount was deducted from bank. Order not placed.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Refund Request",
+    "customer_id": "CUST5016",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 126 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Courier is not attempting delivery for CUST5017 order. Driver is not calling or coming to address.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Delivery Issue",
+    "customer_id": "CUST5017",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 127 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5018 has a defective product that stopped working within 2 months. Warranty claim to be processed.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Warranty Claim",
+    "customer_id": "CUST5018",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 128 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Enterprise client wants bulk pricing for 500 units for next quarter. Route to sales team.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Bulk Pricing Request",
+    "customer_id": "",
+    "priority": "Medium",
+    "department": "Sales"
+  }
+}
+--------------------------------------------------
+Prompt ID: 129 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Customer CUST5019 gave wrong delivery address. Order ORD8899 not yet shipped, needs address update.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Address Correction",
+    "customer_id": "CUST5019",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 130 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: CUST5020 returned goods last week and is now requesting a full refund to their card.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Refund Request",
+    "customer_id": "CUST5020",
+    "priority": "Low",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 131 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Client CUST5021 is questioning an unexpected subscription charge on their account this month.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Subscription Charge Inquiry",
+    "customer_id": "CUST5021",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 132 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Customer has not received their GST invoice for purchases made last month. Needed for accounts.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Invoice Request",
+    "customer_id": "",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 133 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Delivery packaging was badly damaged when received. Product inside seems fine but customer is unhappy.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Delivery Issue",
+    "customer_id": "",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 134 | Seed: 999 | Category: IT_TICKET | Status: 0 (wrong_tool)
+Query: CUST5022 import order stuck at customs for 10 days. Need documentation support urgently.
+Response: {
+  "name": "create_it_ticket",
+  "parameters": {
+    "title": "Import Order Stuck at Customs for 10 Days",
+    "description": "import order stuck at customs for 10 days. Need documentation support urgently.",
+    "priority": "Critical",
+    "department": "IT Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 135 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: Customer payment was debited twice from their account. Bank confirms double deduction.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Payment Deletion",
+    "customer_id": "",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 136 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5023 ordered 10 units but only received 7. Quantity short by 3 items in delivery.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Status Request",
+    "customer_id": "CUST5023",
+    "priority": "Low"
+  }
+}
+--------------------------------------------------
+Prompt ID: 137 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 0 (missing_key:department)
+Query: CUST5024 has raised this complaint 3 times and it is still unresolved. Needs escalation to senior management.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Needs Escalation",
+    "customer_id": "CUST5024",
+    "priority": "Medium"
+  }
+}
+--------------------------------------------------
+Prompt ID: 138 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Order was for a birthday gift needed by tomorrow. Delivery still not arrived. Customer very distressed.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Delivery Issue",
+    "customer_id": "",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 139 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer CUST5025 placed order 2 hours ago and wants to cancel immediately. Please process.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Cancellation Request",
+    "customer_id": "CUST5025",
+    "priority": "High",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 140 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Client found same product at a lower price on competitor website and wants a price match.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Price Match Request",
+    "customer_id": "",
+    "priority": "High",
+    "department": "Logistics"
+  }
+}
+--------------------------------------------------
+Prompt ID: 141 | Seed: 999 | Category: CUSTOMER_QUERY | Status: 1 (ok)
+Query: Customer CUST5026 says delivery was very fast and packaging was excellent. Wants to compliment the team.
+Response: {
+  "name": "route_customer_query",
+  "parameters": {
+    "query_type": "Compliment Request",
+    "customer_id": "CUST5026",
+    "priority": "Medium",
+    "department": "Customer Support"
+  }
+}
+--------------------------------------------------
+Prompt ID: 142 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: How many work-from-home days are employees allowed per week under the current WFH policy?
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "Work From Home Policy", "department": "HR"}}
+--------------------------------------------------
+Prompt ID: 143 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the process for booking flights for official travel and getting reimbursement?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Official Travel and Reimbursement Process",
+    "department": "Finance"
+  }
+}
+--------------------------------------------------
+Prompt ID: 144 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What documents do I need to submit for a medical reimbursement claim?
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "medical reimbursement claim documents", "department": "HR"}}
+--------------------------------------------------
+Prompt ID: 145 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the procedure for employees to withdraw their PF amount?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Personal Financial Benefits",
+    "department": "Finance"
+  }
+}
+--------------------------------------------------
+Prompt ID: 146 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: When is the annual performance review cycle and how are ratings decided?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Performance Review Cycle",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 147 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the standard notice period for resigning employees at our company?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Standard Notice Period for Resigning Employees",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 148 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the company retirement age policy and what benefits does a retiring employee receive?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "Retirement Age Policy",
+    "department": "HR"
+  }
+}
+--------------------------------------------------
+Prompt ID: 149 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the annual training and development budget allocated per employee?
+Response: {"name": "get_internal_knowledge", "parameters": {"topic": "Annual Training and Development Budget Allocation", "department": "HR"}}
+--------------------------------------------------
+Prompt ID: 150 | Seed: 999 | Category: KNOWLEDGE_QUERY | Status: 1 (ok)
+Query: What is the employee referral bonus amount if my referred candidate joins the company?
+Response: {
+  "name": "get_internal_knowledge",
+  "parameters": {
+    "topic": "employee referral bonus amount",
+    "department": "HR"
+  }
+}
+--------------------------------------------------

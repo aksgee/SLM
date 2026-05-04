@@ -1,0 +1,150 @@
+{"prompt_id": 1, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 2, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 3, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 4, "expected_name": "create_it_ticket", "is_multi_tool": true, "min_tools": 2, "max_tools": 2, "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 5, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 6, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 7, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 8, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 9, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 10, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 11, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 12, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 13, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 14, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 15, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST9921"}}
+{"prompt_id": 16, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST3344"}}
+{"prompt_id": 17, "expected_name": "route_customer_query", "required_keys": ["query_type", "priority", "department"]}
+{"prompt_id": 18, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST1122"}}
+{"prompt_id": 19, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 20, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 21, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 22, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 23, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 24, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 25, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 26, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 27, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 28, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 29, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 30, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 31, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 32, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 33, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 34, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 35, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 36, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 37, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 38, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 39, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 40, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 41, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 42, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 43, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 44, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 45, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 46, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 47, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 48, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 49, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 50, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 51, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 52, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 53, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 54, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 55, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 56, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 57, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 58, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 59, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 60, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 61, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 62, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 63, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 64, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 65, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 66, "expected_name": "create_it_ticket", "required_keys": ["title", "description", "priority", "department"]}
+{"prompt_id": 67, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 68, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 69, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 70, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 71, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 72, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 73, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 74, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 75, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 76, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 77, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 78, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 79, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 80, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 81, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 82, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 83, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 84, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 85, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 86, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 87, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 88, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 89, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 90, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 91, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 92, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 93, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 94, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 95, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 96, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 97, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 98, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 99, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 100, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 101, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 102, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 103, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 104, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 105, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 106, "expected_name": "process_leave_request", "required_keys": ["leave_type", "start_date", "end_date", "reason"]}
+{"prompt_id": 107, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5001"}}
+{"prompt_id": 108, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5002"}}
+{"prompt_id": 109, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5003"}}
+{"prompt_id": 110, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5004"}}
+{"prompt_id": 111, "expected_name": "route_customer_query", "required_keys": ["query_type", "priority", "department"]}
+{"prompt_id": 112, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5005"}}
+{"prompt_id": 113, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5006"}}
+{"prompt_id": 114, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5007"}}
+{"prompt_id": 115, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5008"}}
+{"prompt_id": 116, "expected_name": "route_customer_query", "required_keys": ["query_type", "priority", "department"]}
+{"prompt_id": 117, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5009"}}
+{"prompt_id": 118, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5010"}}
+{"prompt_id": 119, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5011"}}
+{"prompt_id": 120, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5012"}}
+{"prompt_id": 121, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5013"}}
+{"prompt_id": 122, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5014"}}
+{"prompt_id": 123, "expected_name": "route_customer_query", "required_keys": ["query_type", "priority", "department"]}
+{"prompt_id": 124, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5015"}}
+{"prompt_id": 125, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5016"}}
+{"prompt_id": 126, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5017"}}
+{"prompt_id": 127, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5018"}}
+{"prompt_id": 128, "expected_name": "route_customer_query", "required_keys": ["query_type", "priority", "department"]}
+{"prompt_id": 129, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5019"}}
+{"prompt_id": 130, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5020"}}
+{"prompt_id": 131, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5021"}}
+{"prompt_id": 132, "expected_name": "route_customer_query", "required_keys": ["query_type", "priority", "department"]}
+{"prompt_id": 133, "expected_name": "route_customer_query", "required_keys": ["query_type", "priority", "department"]}
+{"prompt_id": 134, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5022"}}
+{"prompt_id": 135, "expected_name": "route_customer_query", "required_keys": ["query_type", "priority", "department"]}
+{"prompt_id": 136, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5023"}}
+{"prompt_id": 137, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5024"}}
+{"prompt_id": 138, "expected_name": "route_customer_query", "required_keys": ["query_type", "priority", "department"]}
+{"prompt_id": 139, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5025"}}
+{"prompt_id": 140, "expected_name": "route_customer_query", "required_keys": ["query_type", "priority", "department"]}
+{"prompt_id": 141, "expected_name": "route_customer_query", "required_keys": ["query_type", "customer_id", "priority", "department"], "contains_values": {"customer_id": "CUST5026"}}
+{"prompt_id": 142, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 143, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 144, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 145, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 146, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 147, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 148, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 149, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
+{"prompt_id": 150, "expected_name": "get_internal_knowledge", "required_keys": ["topic", "department"]}
